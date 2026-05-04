@@ -3,9 +3,11 @@ import React from 'react';
 import { Redirect } from 'expo-router';
 import "../global.css";
 
-const index = () => {
+const App = () => {
 
-    return <Redirect href="/(stack)/home" />;
+    // return <Redirect href="/(stack)/home" />;
+    return <Redirect href="/tabs" />;
+
 
     // return (
     //     <SafeAreaView>
@@ -27,4 +29,4 @@ const index = () => {
     // );
 };
 
-export default index;
+export default App;
