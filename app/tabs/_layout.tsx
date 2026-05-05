@@ -12,13 +12,15 @@ const TabsLayout = () => {
                 backgroundColor: 'black',
                 borderTopWidth: 0,
                 elevation: 0,
+                height: 60,
+                paddingBottom: 0,
             },
             tabBarActiveBackgroundColor: '#1a1a1a',
         }}>
             <Tabs.Screen
                 name="(stack)"
                 options={{
-                    title: 'Home Screen',
+                    title: 'Stack',
                     tabBarIcon: ({ color }) => <Ionicons size={28} name="person-add-outline" color={color} />,
                 }}
             />

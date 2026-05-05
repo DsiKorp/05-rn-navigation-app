@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 const ScheduleScreen = () => {
     return (
         <View>
-            <Text>ScheduleScreen</Text>
+            <Text>Drawer ScheduleScreen</Text>
         </View>
     );
 };

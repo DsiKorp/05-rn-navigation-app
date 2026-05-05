@@ -6,6 +6,7 @@ import React from 'react';
 
 const DrawerLayout = () => {
     return (
+        // menu drawer
         <Drawer
             drawerContent={CustomDrawer}
             screenOptions={{

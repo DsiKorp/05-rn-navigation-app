@@ -11,7 +11,7 @@ const CustomDrawer = (props: DrawerContentComponentProps) => {
                 </View>
             </View>
 
-            {/* Habilita los Drawer.Screen para que se muestren en el Drawer */}
+            {/* Habilita los Drawer.Screen para que se muestren en el Drawer {...props} */}
             <DrawerItemList {...props} />
         </DrawerContentScrollView>
     );
