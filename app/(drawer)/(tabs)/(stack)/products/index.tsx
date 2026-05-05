@@ -16,7 +16,7 @@ const ProductsScren = () => {
                         <Text className='text-gray-600'>{item.description}</Text>
                         <View className='flex-row items-center mt-2 justify-between'>
                             <Text className='font-work-light mt-2'>${item.price.toFixed(2)}</Text>
-                            <Link href={`/drawer/tabs/products/${item.id}`} className='text-blue-500 underline'>
+                            <Link href={`/products/${item.id}`} className='text-blue-500 underline'>
                                 Ver detalles
                             </Link>
                         </View>
