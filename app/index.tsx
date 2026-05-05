@@ -6,7 +6,9 @@ import "../global.css";
 const App = () => {
 
     // return <Redirect href="/(stack)/home" />;
-    return <Redirect href="/tabs" />;
+    // return <Redirect href="/tabs/(stack)/home" />;
+    return <Redirect href="/drawer" />;
+
 
 
     // return (
