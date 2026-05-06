@@ -1,14 +1,22 @@
 import { products } from '@/store/products.store';
-import { useLocalSearchParams } from 'expo-router';
-import React from 'react';
+import { useLocalSearchParams, useNavigation } from 'expo-router';
+import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
 
 const ProductScreen = () => {
     const { id } = useLocalSearchParams();
+    const navigation = useNavigation();
 
     console.log({ id });
 
     const product = products.find((p) => p.id === id);
+
+    useEffect(() => {
+        console.log({ product });
+        navigation.setOptions({
+            title: product ? product.title : 'Product Details'
+        });
+    }, [product]);
 
     if (!product) {
         return (

@@ -7,6 +7,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
 
+    // navigation:  da acceso al DrawerActions, 
+    // que es un objeto que contiene las acciones para controlar el drawer 
+    // (abrir, cerrar, toggle)
     const navigation = useNavigation();
 
     const onToggleDrawer = () => {
@@ -49,6 +52,7 @@ const HomeScreen = () => {
                 <CustomButton
                     className="mb-2"
                     color="primary"
+                    onPress={onToggleDrawer}
                 >
                     Show Menu
                 </CustomButton>
